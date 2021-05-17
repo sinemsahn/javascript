@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+        <title>Deneme</title>
+    </head>
+
+    <body>
+       <div id="gezenalan"> <img src="nazarbonck.jpg" width="50" height="29" style="border: none;"/></div>
+
+
+        <script>
+            var alan = document.getElementById("gezenalan");
+            alan.style.position="absolute";
+            //gezen bir alan olduğunu söylüyoruz.
+            //mouse takip eden img yapacagiz. client x + 20 diyip altına biraz daha çekebilirsin
+            window.onmousemove = function(event){
+                alan.style.left = event.clientX + "px";
+                alan.style.top = event.clientY + "px";
+            }
+
+        </script>
+    </body>
+</html>
